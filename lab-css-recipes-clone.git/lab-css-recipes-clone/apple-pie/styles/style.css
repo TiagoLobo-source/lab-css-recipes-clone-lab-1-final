@@ -1,0 +1,113 @@
+/* CSS RESET - do not remove */
+/* Reset default browser styles and provide a consistent starting point */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Set the font */
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* STYLES */
+/* Write your CSS below */
+
+.top-bar {
+  background: url('/lab-css-recipes-clone.git/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg') no-repeat center center / cover;
+  background-size: cover;
+  height: 60vh;
+  color: #fff;
+  padding: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+ul, h2 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.recipe-card {
+  border-top: 2px  solid #ccc;
+  padding: 20px;
+}
+
+.recipe-card h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.recipe-card ul {
+  margin: 0;
+  list-style-type: "- ";
+}
+
+.recipe-card li {
+  margin-bottom: 10px;
+}
+
+.cooking{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#cooking {
+  width:50vw;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#recipe {
+width:50vw;
+height: auto;
+transition: transform 0.3s ease-in-out;
+}
+
+.main {
+  padding: 30px 100px 30px 100px;
+}
+
+/* remove style first from ordered list then add my own style*/
+
+ol {
+  counter-reset: iterate;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 40px;
+}
+
+ol li::before {
+  counter-increment:iterate;
+  content: counter(iterate) ")";
+  margin-right: 10px;
+}
+
